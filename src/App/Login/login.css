@@ -1,0 +1,163 @@
+.login-all {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  background-image: url("https://pngimg.com/uploads/blood/blood_PNG6111.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: bottom -1rem right 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes move {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.title-ded {
+  position: absolute;
+  top: 7%;
+  left: 25%;
+  /* width: 100%; */
+}
+.title-ded > span {
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(#d3d3d3, #d3d3d3, #333, #333, red, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-ded > img {
+  position: absolute;
+  top: -140%;
+  left: 105%;
+  margin-top: 3rem;
+  width: 18%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px -2px 16px 1px rgba(250, 250, 250, 1);
+  -moz-box-shadow: 0px -2px 16px 1px rgba(250, 250, 250, 1);
+  box-shadow: 0px -2px 16px 1px rgba(250, 250, 250, 1);
+  animation-delay: 2s;
+
+  animation: move 3s infinite;
+}
+
+.cded-login {
+  width: 60%;
+  /* background: rgba(255, 255, 255, 0.3); */
+  height: 60%;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  border-radius: 1rem;
+}
+
+.left-ded {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.right-ded {
+  /* border-left: dotted 5px black; */
+  width: 100%;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-left-width: 5px;
+  border-left-style: dotted;
+  border-image: linear-gradient(to bottom, black, white, red) 1 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-ded > div {
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+  border: solid 1px white;
+  border-radius: 0.7rem;
+  width: 90%;
+  background: black;
+}
+
+.right-ded > div:hover {
+  border: solid 1px red;
+}
+
+.icons {
+  font-size: 1.1rem;
+}
+.right-ded > label {
+  margin-left: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: white;
+}
+.right-ded > div > input {
+  font-family: serif;
+  color: white;
+  width: 90%;
+  height: 91%;
+  border-style: none;
+  background: transparent;
+}
+
+.right-ded > div > input::placeholder {
+  color: red;
+}
+.right-ded > div > input:focus {
+  border-style: none;
+  outline: none;
+}
+.right-ded > span {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+.left-ded > img {
+  border-radius: 1rem;
+  position: absolute;
+  top: 31%;
+  left: 19%;
+  width: 30%;
+  -webkit-box-shadow: -5px 4px 42px -6px rgba(247, 13, 5, 1);
+  -moz-box-shadow: -5px 4px 42px -6px rgba(247, 13, 5, 1);
+  box-shadow: -5px 4px 42px -6px rgba(247, 13, 5, 1);
+  transition-duration: 1s;
+}
+.left-ded > img:hover {
+  transform: scale(1.2);
+}
+
+.left-ded > span {
+  font-size: 1.6rem;
+  position: absolute;
+  color: white;
+  top: 73%;
+  left: 18%;
+  width: 32%;
+}
+
+.btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  border-radius: 0.7rem;
+  padding: 0.3rem;
+  cursor: pointer;
+  color: red;
+  background: black;
+  border: solid 1px white;
+  width: 50%;
+}
+
+.btn:hover {
+  border: solid 1px red;
+}
